@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'sqlite3'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use SCSS for stylesheets
@@ -42,7 +44,6 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'simplecov'
   gem 'database_cleaner'
-  gem 'sqlite3'
   gem 'pry'
   gem 'guard-rspec', require: false
   gem 'thin'
@@ -52,7 +53,6 @@ end
 gem 'web-console', '~> 2.0', group: :development
 
 group :production do
-  gem 'pg'
   gem 'google-analytics-rails'
   gem 'rails_12factor'
 end
